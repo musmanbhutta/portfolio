@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="portfolio-doc">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Usman - Core PHP Developer portfolio focused on legacy PHP systems, MySQL optimization, APIs, security, and production backend maintenance.">
+    <title>Muhammad Usman | Core PHP Developer</title>
+    <script>
+        (function () {
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var savedTheme = null;
+
+            try {
+                savedTheme = localStorage.getItem('portfolio-theme');
+            } catch (error) {
+                savedTheme = null;
+            }
+
+            document.documentElement.setAttribute('data-theme', savedTheme || (prefersDark ? 'dark' : 'light'));
+        }());
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="portfolio-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="portfolio-header" data-header>
+        <nav class="portfolio-nav" aria-label="Primary navigation">
+            <a class="brand-mark" href="#home" aria-label="Muhammad Usman home">
+                <span>MU</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" data-nav-menu>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false" data-theme-toggle>
+                <span class="theme-toggle__sun" aria-hidden="true"></span>
+                <span class="theme-toggle__moon" aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero-section portfolio-section" id="home">
+            <div class="section-shell hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Core PHP Developer</p>
+                    <h1>Muhammad Usman</h1>
+                    <p class="hero-lede">
+                        I build and maintain practical backend systems for legacy and product-based PHP applications, with a focus on clean business logic, stable integrations, secure data handling, and production reliability.
+                    </p>
+                    <div class="hero-actions" aria-label="Primary actions">
+                        <a class="btn btn-primary" href="#projects">View Projects</a>
+                        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+                    </div>
+                    <div class="hero-highlights" aria-label="Developer focus areas">
+                        <span>Legacy PHP</span>
+                        <span>MySQL</span>
+                        <span>REST APIs</span>
+                        <span>Security</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="profile-frame">
+                        <img src="assets/images/muhammad-usman-profile.png" alt="Muhammad Usman" width="1086" height="1448">
+                    </div>
+                    <div class="profile-note">
+                        <strong>Backend and product systems</strong>
+                        <span>PHP, MySQL, APIs, documents, workflows</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section about-section" id="about">
+            <div class="section-shell about-grid">
+                <div class="about-portrait reveal">
+                    <img src="assets/images/muhammad-usman-profile.png" alt="Muhammad Usman profile portrait" width="1086" height="1448">
+                </div>
+
+                <div class="section-copy reveal">
+                    <p class="eyebrow">About Me</p>
+                    <h2>Backend work for systems that already carry real business load.</h2>
+                    <p>
+                        I am a Core PHP Developer working mainly on legacy and product-based PHP applications. My day-to-day work is practical: understanding existing code, improving backend logic, debugging production issues, optimizing MySQL queries, and keeping important business workflows stable.
+                    </p>
+                    <p>
+                        I am comfortable working close to the database, API layer, file handling, document generation, admin panels, and security-sensitive form flows. I prefer clear, maintainable changes that fit the current system instead of risky rewrites.
+                    </p>
+                </div>
+
+                <div class="about-metrics reveal" aria-label="Work focus">
+                    <div>
+                        <strong>PHP</strong>
+                        <span>Procedural and OOP systems</span>
+                    </div>
+                    <div>
+                        <strong>MySQL</strong>
+                        <span>Queries, reporting, optimization</span>
+                    </div>
+                    <div>
+                        <strong>APIs</strong>
+                        <span>Integrations, JSON, debugging</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section skills-section" id="skills">
+            <div class="section-shell">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Tools and practices I use in production PHP work.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <h3>Backend PHP</h3>
+                        <ul>
+                            <li>Core PHP</li>
+                            <li>Object-Oriented PHP</li>
+                            <li>PDO / mysqli</li>
+                            <li>Legacy code maintenance</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <h3>Database and APIs</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>REST APIs</li>
+                            <li>JSON</li>
+                            <li>API debugging and integration</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <h3>Frontend Basics</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <h3>Security and Quality</h3>
+                        <ul>
+                            <li>SQL injection prevention</li>
+                            <li>XSS and CSRF protection</li>
+                            <li>Input validation</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <h3>Business Workflows</h3>
+                        <ul>
+                            <li>Document/PDF generation workflows</li>
+                            <li>Admin panels</li>
+                            <li>Business logic</li>
+                            <li>Status and process tracking</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section projects-section" id="projects">
+            <div class="section-shell">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Product systems, audit workflows, and backend maintenance.</h2>
+                </div>
+
+                <div class="project-list">
+                    <article class="project-card project-card--featured reveal">
+                        <div class="project-card__content">
+                            <p class="project-label">Main Project</p>
+                            <h3>Watt Audit</h3>
+                            <p>
+                                A production-level audit and document workflow system supporting operational teams across admin, client, lawyer, and audit processes. My work focused on keeping complex legacy PHP flows stable while improving backend behavior where it directly affected real users.
+                            </p>
+                            <div class="project-tags">
+                                <span>Core PHP</span>
+                                <span>MySQL</span>
+                                <span>PDF/DOCX</span>
+                                <span>Audit Workflows</span>
+                            </div>
+                        </div>
+                        <ul class="project-points">
+                            <li>RES020 / RES022 audit flows</li>
+                            <li>Dynamic stock and form submission</li>
+                            <li>Document generation and PDF/DOCX templates</li>
+                            <li>Electronic signature integrations</li>
+                            <li>Process and audit status management</li>
+                            <li>MySQL queries, reporting, and optimization</li>
+                            <li>Admin, client, and lawyer workflows</li>
+                            <li>File upload validation and API debugging</li>
+                            <li>Targeted improvements in legacy PHP code</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__content">
+                            <p class="project-label">Second Project</p>
+                            <h3>Ceertif</h3>
+                            <p>
+                                Ceertif is a certification and digital workflow platform connected with audit and document processes. My work was backend-focused, covering workflow maintenance, API behavior, authentication handling, and database-level improvements.
+                            </p>
+                            <div class="project-tags">
+                                <span>APIs</span>
+                                <span>JWT</span>
+                                <span>Backend</span>
+                                <span>Database</span>
+                            </div>
+                        </div>
+                        <ul class="project-points">
+                            <li>Client workflow support</li>
+                            <li>API integrations and debugging</li>
+                            <li>Authentication and JWT handling</li>
+                            <li>Business logic improvements</li>
+                            <li>Maintenance and production issue fixing</li>
+                            <li>Backend and database work</li>
+                        </ul>
+                        <a class="project-link" href="https://www.ceertif.com/en/" target="_blank" rel="noopener noreferrer">Visit Ceertif</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section experience-section" id="experience">
+            <div class="section-shell">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Experience / What I Do</p>
+                    <h2>Focused backend support for practical business systems.</h2>
+                </div>
+
+                <div class="work-grid">
+                    <article class="work-card reveal">
+                        <span>01</span>
+                        <h3>Maintain Legacy PHP Applications</h3>
+                        <p>Read existing procedural and class-based code, trace business rules, fix bugs, and add changes without breaking established workflows.</p>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span>02</span>
+                        <h3>Improve Backend Logic</h3>
+                        <p>Clean up validation, status handling, form processing, file uploads, and admin-side behavior where clear backend logic matters most.</p>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span>03</span>
+                        <h3>Optimize MySQL and Reports</h3>
+                        <p>Work with joins, filters, indexes, and query structure to make reporting and operational screens more reliable and easier to use.</p>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <span>04</span>
+                        <h3>Integrate APIs and Documents</h3>
+                        <p>Connect external services, debug JSON/API issues, support document templates, and improve PDF or DOCX generation workflows.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section contact-section" id="contact">
+            <div class="section-shell contact-grid">
+                <div class="section-copy reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Available for backend PHP work, maintenance, and product support.</h2>
+                    <p>
+                        For projects involving legacy PHP, MySQL, APIs, admin workflows, document generation, or production debugging, send a message using the contact details below.
+                    </p>
+                </div>
+
+                <div class="contact-card reveal">
+                    <a href="mailto:usman@codelounge.io">
+                        <span>Email</span>
+                        <strong>usman@codelounge.io</strong>
+                    </a>
+                    <a href="https://www.linkedin.com/in/musmanbhutta29/" aria-label="LinkedIn profile placeholder">
+                        <span>LinkedIn</span>
+                        <strong>Muhammad Usman Bhutta</strong>
+                    </a>
+                    <a href="https://github.com/musmanbhutta" aria-label="GitHub profile placeholder">
+                        <span>GitHub</span>
+                        <strong>Muhammad Usman</strong>
+                    </a>
+                    <div>
+                        <span>Location</span>
+                        <strong>Pakistan</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="portfolio-footer">
+        <div class="section-shell">
+            <p>&copy; <span data-current-year></span> Muhammad Usman. Core PHP Developer.</p>
+            <a href="#home">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
